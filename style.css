@@ -13,10 +13,14 @@ h1 {
     font-size: 4rem;
     text-align: center;
 }
-body > p {
+
+.center {
+    font-size: 1.5rem;
     text-align: center;
-    font-size: 2rem;
+    color: #333;
+    margin-bottom: 100px;
 }
+
 footer {
     text-align: center;
     color: midnightblue;
@@ -28,6 +32,7 @@ span {
     height: 200px;
     float: left;
     margin-right: 50px;
+    border-radius: 20px;
 }
 .card {
     width: 45%;
@@ -40,4 +45,24 @@ span {
 }
 .cut {
     width: 300px
+}
+
+@media (max-width: 480px) {
+    h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
 }
